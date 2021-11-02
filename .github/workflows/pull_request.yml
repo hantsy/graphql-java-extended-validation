@@ -4,9 +4,11 @@ on:
   push:
     branches:
       - '!master'
+      - '!jakartaee8'
   pull_request:
     branches:
       - master
+      - jakartaee8
 jobs:
   buildAndTest:
     runs-on: ubuntu-latest

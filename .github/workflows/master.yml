@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - jakartaee8
 jobs:
   buildAndPublish:
     runs-on: ubuntu-latest
