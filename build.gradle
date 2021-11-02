@@ -76,7 +76,7 @@ publishing {
         maven(MavenPublication) {
             from components.java
             groupId group
-            artifactId 'graphql-java-extended-validation'
+            artifactId 'graphql-java-extended-validation-jakarta'
             version version
 
             artifact sourcesJar
@@ -85,7 +85,7 @@ publishing {
             pom.withXml {
                 asNode().children().last() + {
                     resolveStrategy = Closure.DELEGATE_FIRST
-                    name 'graphql-java-extended-validation'
+                    name 'graphql-java-extended-validation-jakarta'
                     description 'A library fo extended validation for graphql-java'
                     url 'https://github.com/graphql-java/graphql-java-extended-validation'
                     inceptionYear '2019'
